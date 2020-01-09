@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
 /**
  * author : ParfoisMeng
  * time   : 2020-01-07
- * desc   : WXCallbackFix 注解类, 需传入对应 applicationId.
+ * desc   : WXCallbackFix 注解类, 需传入对应新的包名路径.
  */
 @Retention(RetentionPolicy.CLASS)
 @Target(ElementType.TYPE)

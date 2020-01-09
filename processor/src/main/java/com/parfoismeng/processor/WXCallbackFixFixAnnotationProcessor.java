@@ -85,13 +85,16 @@ public class WXCallbackFixFixAnnotationProcessor extends AbstractProcessor {
             // 获取类名
             String className = element.getSimpleName().toString();
             // 获取注解元素的值
-            String applicationId = element.getAnnotation(WXCallbackFix.class).value();
+            String newPackageName = element.getAnnotation(WXCallbackFix.class).value();
+
+            // 如果路径一样，直接跳出，不用生成
+            if (packageName.equals(newPackageName)) continue;
 
             TypeSpec typeBuilder = TypeSpec.classBuilder(className)
                     .superclass(ClassName.get(packageName, className))
                     .addModifiers(Modifier.PUBLIC)
                     .build();
-            JavaFile javaFile = JavaFile.builder(applicationId, typeBuilder)
+            JavaFile javaFile = JavaFile.builder(newPackageName, typeBuilder)
                     .addFileComment("Generated code from WXCallbackFix. Do not modify!")
                     .build();
             try {
