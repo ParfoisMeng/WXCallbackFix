@@ -44,7 +44,7 @@
     }
 
     // 3. Build -> ReBuild Project
-          等待 Build 完成，对应 Module 的 build/generated/source/kapt 路径下将生成新的符合指定包名路径的 WXEntryActivity.
+    //    等待 Build 完成，对应 Module 的 build/generated/source/kapt 路径下将生成新的符合指定包名路径的 WXEntryActivity.
 ```
 
 - 其他  
