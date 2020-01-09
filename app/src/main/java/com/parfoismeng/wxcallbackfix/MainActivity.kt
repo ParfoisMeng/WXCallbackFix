@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.parfoismeng.annotation.WXCallbackFix
 
-@WXCallbackFix(BuildConfig.APPLICATION_ID)
+@WXCallbackFix(BuildConfig.APPLICATION_ID + ".wxapi")
 open class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
