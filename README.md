@@ -17,7 +17,7 @@
 - - - - -
 
 ### 使用
- - 引用类库 *请将last-version替换为最新版本号 [![](https://jitpack.io/v/ParfoisMeng/WXCallbackFix.svg)](https://jitpack.io/#ParfoisMeng/WXCallbackFix)
+ - 引用类库 *请将last-version替换为最新版本号 [![](https://jitpack.io/v/ParfoisMeng/WXCallbackFix.svg)](https://jitpack.io/#ParfoisMeng/WXCallbackFix)  
 ```
     // 1.添加jitpack仓库
     allprojects {
@@ -32,9 +32,8 @@
         kapt 'com.github.ParfoisMeng:WXCallbackFix:last-version'
     }
 ```
-因为没有上传过 kapt 的库，所以以上依赖会不会有什么隐藏问题我也不清楚，不过在我司代码中可以正常使用。<del>以我司代码的尿性程度，相信绝大多数都不会有问题吧。</del>
 
-- 代码
+- 代码  
 ```
     // 1. 依然需要你先按微信的要求，在通用的包名路径下新建 wxapi 目录，并在该目录下新建 WXEntryActivity
     //    此段示例代码使用的是 Umeng, 所以继承的是 WXCallbackActivity
@@ -48,7 +47,7 @@
           等待 Build 完成，对应 Module 的 build/generated/source/kapt 路径下将生成新的符合指定包名路径的 WXEntryActivity.
 ```
 
-- 其他
+- 其他  
 [分享到支付宝](https://docs.open.alipay.com/215/105104/)、[分享到钉钉](https://ding-doc.dingtalk.com/doc#/native/oguxo2/8ebdfe57) 也是同理哦。  
 举一反三，搞代码千万不要太死板~
 
